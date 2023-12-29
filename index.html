@@ -2,7 +2,8 @@
 <html>
   <h1 id="banana">NaN</h1>
   <script>
-    const url = URL("unfunnylaugh.github.io/?banan=");
-    document.getElementById("banana").innerHTML = searchParams.get("banan")
+    const url = new URLSearchParams("unfunnylaugh.github.io/?banan=");
+    
+    document.getElementById("banana").innerHTML = url.get("banan")
   </script>
 </html>
