@@ -3,8 +3,7 @@
   <body>
   <h2 id="banana">who ate my banan</h2>
   <script>
-    const url = (new URL(location).searchParams.get('banan')
-    banana.innerHTML = url;
+    banana.innerHTML = (new URL(location).searchParams.get('who') || "who") + " ate my banan"
   </script>
   </body>
 </html>
