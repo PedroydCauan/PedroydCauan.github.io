@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  <h2 id="banana">who ate my banan</h2>
+  <script>
+    banana.innerHTML = (new URL(location).searchParams.get('who') || "who") + " ate my banan"
+  </script>
+  </body>
+</html>
